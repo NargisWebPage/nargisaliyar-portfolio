@@ -1,26 +1,147 @@
+
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* ==============================
+   DARK THEME
+============================== */
+nav,
+header,
+section,
+article,
+button,
+a,
+div {
+  transition-property: background-color, border-color, color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
 }
+
+
+:root,
+html.dark {
+  color-scheme: dark;
+
+  --background: #080d1a;
+  --foreground: #f8fafc;
+  --surface: #111827;
+  --nav-bg: rgba(8, 13, 26, 0.92);
+  --card: #101827;
+  --secondary: #94a3b8;
+  --primary: #3b82f6;
+  --accent: #10b981;
+  --border: #263449;
+  --shadow: rgba(0, 0, 0, 0.2);
+}
+
+/* ==============================
+   LIGHT THEME
+============================== */
+
+html.light {
+  color-scheme: light;
+
+  --background: #f4f7fc;
+  --foreground: #172033;
+  --surface: #ffffff;
+  --nav-bg: rgba(255, 255, 255, 0.92);
+  --card: #ffffff;
+  --secondary: #64748b;
+  --primary: #2563eb;
+  --accent: #059669;
+  --border: #e2e8f0;
+  --shadow: rgba(15, 23, 42, 0.07);
+}
+
+/* ==============================
+   TAILWIND THEME VARIABLES
+============================== */
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-surface: var(--surface);
+  --color-card: var(--card);
+  --color-primary: var(--primary);
+  --color-accent: var(--accent);
+  --color-secondary: var(--secondary);
+  --color-border: var(--border);
+
+  --font-sans: var(--font-inter);
+  --font-heading: var(--font-space-grotesk);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* ==============================
+   GLOBAL STYLES
+============================== */
+
+html {
+  min-height: 100%;
+  scroll-behavior: smooth;
+  background-color: var(--background);
 }
 
 body {
-  background: var(--background);
+  min-height: 100vh;
+
+  background:
+    radial-gradient(
+      ellipse at 75% 20%,
+      color-mix(in srgb, var(--primary) 9%, transparent),
+      transparent 40%
+    ),
+    radial-gradient(
+      ellipse at 10% 80%,
+      color-mix(in srgb, var(--accent) 5%, transparent),
+      transparent 35%
+    ),
+    var(--background);
+
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter), sans-serif;
+
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+/* Smooth theme transitions */
+
+nav,
+header,
+section,
+article,
+button,
+a,
+div {
+  transition-property: background-color, border-color, color;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+}
+
+/* Text selection */
+
+::selection {
+  background-color: var(--primary);
+  color: white;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
 }
