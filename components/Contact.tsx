@@ -120,7 +120,7 @@ export default function Contact() {
 
               {/* Email */}
               <a
-                href="mailto:Samearasuli272@gmail.com"
+                href="mailto:nargisaliyar86@gmail.com"
                 className="group mt-8 flex items-center gap-4"
               >
                 <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl border border-blue-500/20 bg-blue-500/10 text-xl text-blue-500 transition-all group-hover:bg-blue-500/20">
@@ -137,7 +137,7 @@ export default function Contact() {
                       isDark ? "text-slate-200" : "text-slate-800"
                     }`}
                   >
-                    Samearasuli272@gmail.com
+                    nargisaliyar86@gmail.com
                   </span>
                 </span>
               </a>
@@ -158,7 +158,7 @@ export default function Contact() {
                       isDark ? "text-slate-200" : "text-slate-800"
                     }`}
                   >
-                    Afghanistan
+                    Pakistan
                   </span>
                 </span>
               </div>

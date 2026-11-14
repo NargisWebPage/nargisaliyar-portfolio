@@ -62,25 +62,24 @@ export default function Footer() {
           >
             <a href="#home" className="inline-flex items-center gap-3">
               <span className="flex h-11 w-11 items-center justify-center rounded-xl border border-blue-400/20 bg-blue-500/10 font-heading text-sm font-bold text-blue-500">
-                SR<span className={headingColor}>.</span>
+              NA<span className={headingColor}>.</span>
               </span>
 
               <span
                 className={`font-heading text-sm font-semibold tracking-wide ${headingColor}`}
               >
-                SAMEA RASULI
+                NARGIS ALIYAR
               </span>
             </a>
 
             <p className={`mt-6 max-w-xs text-sm leading-8 ${bodyColor}`}>
-              Front-End Developer and Computer Science student passionate
-              about creating modern and meaningful digital experiences.
+              Front-End Developer passionate about creating modern and meaningful digital experiences.
             </p>
 
             {/* Social Links */}
             <div className="mt-6 flex gap-3">
               <a
-                href="https://github.com/"
+                href="https://github.com/NargisWebPagehttps://github.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="GitHub"
@@ -90,7 +89,7 @@ export default function Footer() {
               </a>
 
               <a
-                href="https://www.linkedin.com/"
+                href="https://www.linkedin.com/in/nargis-aliyar-026977398/https://www.linkedin.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
@@ -164,7 +163,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="flex flex-col items-center justify-between gap-5 pt-7 text-center sm:flex-row sm:text-left">
           <p className="text-xs text-slate-500">
-            © 2026 Samea Rasuli. All rights reserved.
+            © 2026 Nargis Aliyar. All rights reserved.
           </p>
 
           <p className="text-xs tracking-wide text-slate-500">
@@ -184,3 +183,4 @@ export default function Footer() {
     </footer>
   );
 }
+

@@ -106,9 +106,8 @@ export default function About() {
 
               <div className="mt-6 space-y-5 text-sm leading-8 text-secondary sm:text-base">
                 <p>
-                  I'm a Computer Science student and aspiring Front-End
-                  Developer who enjoys creating modern and user-friendly
-                  digital experiences.
+                  I'm an aspiring Front-End Developer who enjoys creating 
+                  modern and user-friendly digital experiences.
                 </p>
 
                 <p>

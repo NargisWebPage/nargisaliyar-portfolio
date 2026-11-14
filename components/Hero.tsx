@@ -46,12 +46,11 @@ return ( <section
         <span className="text-blue-500">.</span>
       </h1>
 
-      <h2 className="mt-6 max-w-lg text-xl font-medium leading-relaxed text-foreground/90 sm:text-2xl">
-        Front-End Developer
-        <span className="text-blue-500"> & </span>
-        Computer Science Student
-      </h2>
-
+     <h2 className="mt-6 max-w-lg text-xl font-medium leading-relaxed text-foreground/90 sm:text-2xl">
+  Front-End Developer
+  <span className="text-blue-500"> & </span>
+  Graphic Designer
+</h2>
       <p className="mt-5 max-w-md text-sm leading-8 text-secondary sm:text-base">
         I build modern, responsive, and user-friendly digital experiences.
         I enjoy turning creative ideas into functional and meaningful
@@ -152,7 +151,7 @@ return ( <section
 
         <Image
           src="/images/profileee.png"
-          alt="Samea Rasuli"
+          alt="Nargis"
           fill
           priority
           sizes="(max-width: 640px) 224px, 256px"

@@ -2,35 +2,34 @@
 
 import { motion, useReducedMotion } from "motion/react";
 import { useTheme } from "./ThemeProvider";
-
 const experiences = [
   {
     number: "01",
-    period: "2025",
-    type: "Professional Experience",
-    title: "Remote HR Intern",
-    organization: "GAO Tek Inc.",
+    period: "6 Months",
+    type: "Teaching Experience",
+    title: "English Teacher",
+    organization: "English Language Teaching",
     description:
-      "Worked remotely with the HR team, supporting candidate sourcing, reviewing CVs, communicating with applicants, and preparing recruitment reports.",
+      "Worked as an English teacher, helping more than 35 girls improve their English skills through lessons, practice, and supportive learning activities.",
     achievements: [
-      "Candidate sourcing and screening",
-      "CV review and applicant communication",
-      "Recruitment reports and documentation",
+      "Supported 35+ female students",
+      "Prepared and delivered English lessons",
+      "Encouraged active learning and participation",
     ],
     color: "blue",
   },
   {
     number: "02",
-    period: "6 Months",
-    type: "Volunteer Experience",
-    title: "English Tutor",
-    organization: "Volunteer Teaching",
+    period: "—",
+    type: "Creative Experience",
+    title: "Graphic Designer",
+    organization: "Graphic Design",
     description:
-      "Volunteered as an English tutor, helping more than 35 girls improve their English skills through lessons, practice, and supportive learning activities.",
+      "Worked on graphic design, creating visual content with a focus on creativity, visual communication, and attractive design layouts.",
     achievements: [
-      "Supported 35+ female students",
-      "Prepared and delivered English lessons",
-      "Encouraged active learning and participation",
+      "Graphic design and visual content creation",
+      "Creative layouts and compositions",
+      "Visual communication and design",
     ],
     color: "emerald",
   },
@@ -41,7 +40,7 @@ const experiences = [
     title: "Front-End Development",
     organization: "Independent Learning",
     description:
-      "Continuously developing my technical skills through structured learning and hands-on projects, focusing on modern front-end technologies.",
+      "Continuously developing my front-end development skills through structured learning and hands-on projects, focusing on modern front-end technologies.",
     achievements: [
       "HTML, CSS, and JavaScript",
       "TypeScript and React",
